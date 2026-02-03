@@ -8,7 +8,7 @@ from PyQt6.QtMultimedia import QSoundEffect
 import sys
 
 ALLOWED_CHARACTERS = '0123456789'
-ICON = 'icon\\png_type\\icon_hourglass.png'
+#ICON = 'icon\\png_type\\icon_hourglass.png'
 MAX_TIME = 180
 
 class Error(QWidget):
@@ -51,6 +51,7 @@ class TimerWidget(QWidget):
 
         time_string = f"{minutes:02d}:{seconds:02d}"
         self.label.setText(time_string)
+        print(time_string)
 
 class Button(QPushButton):
     def __init__(self, text, parent): #width, height = 280, 70
@@ -67,7 +68,7 @@ class MainWindow(QWidget):
 
         # Настройки основного окна
         self.setWindowTitle('Timer')
-        self.setWindowIcon(QtGui.QIcon(ICON))
+        #self.setWindowIcon(QtGui.QIcon(ICON))
         self.centralwidget = self
         self.centralwidget.setObjectName('centralwidget') # --Не совсем понял, для чего нужна эта строка--
         self.setFixedSize(300, 325)
