@@ -4,5 +4,6 @@
 .vscode/
 .vscode/*
 output/
-/idea/
-/vs/
+.idea
+.vs
+
