@@ -36,7 +36,7 @@ class TimerWidget(QWidget):
         layout.addWidget(self.label)
         self.setLayout(layout)
 
-        self.timer.start()
+        self.timer.start() #create func start_timer
 
     def update_timer(self):
         current_time = self.label.text()
